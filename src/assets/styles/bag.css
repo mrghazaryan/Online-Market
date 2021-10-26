@@ -1,0 +1,8 @@
+.bag {
+    text-align: center;
+    position: absolute;
+    display: block;
+    top: 100px;
+    left: 40%;
+    z-index: -2;
+}

@@ -9,33 +9,22 @@
       "id": 2,
       "username": "user-1",
       "password": "123456"
-    },
-    {
-      "id": 3
-    },
-    {
-      "id": 4
-    },
-    {
-      "id": 5
     }
   ],
   "products": [
     {
       "id": 1,
-      "title": "Title - 1",
-      "description": "Description - 1",
-      "price": 1000,
+      "productName": "Apple iphone 13 pro max",
+      "price": 3570,
       "count": 7,
-      "imgName": "111.jpg"
+      "productPicture": "iphone.jpg"
     },
     {
       "id": 2,
-      "title": "Title - 2",
-      "description": "Description - 2",
-      "price": 300,
+      "productName": "Samsung galaxy s21 ultra",
+      "price": 3500,
       "count": 15,
-      "imgName": "111.jpg"
+      "productPicture": "Samsung.jpg"
     }
   ]
 }

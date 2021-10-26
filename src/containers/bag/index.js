@@ -8,40 +8,40 @@ import {productsSelector} from "../../store/selectors/shop";
 
 const Bag = () => {
 
-  const dispatch = useDispatch();
-  const bag = useSelector(bagSelector);
-  const products = useSelector(productsSelector);
+    const dispatch = useDispatch();
+    const bag = useSelector(bagSelector);
+    const products = useSelector(productsSelector);
 
-  const onCheckOut = () => {
-    const check = bag.reduce((accumulator, currentValue) => (accumulator + currentValue.count * currentValue.price), 0);
-    updateProducts(products);
-    alert(`success ${check}`);
-    dispatch(checkOut());
-  };
+    const onCheckOut = () => {
+        const check = bag.reduce((accumulator, currentValue) => (accumulator + currentValue.count * currentValue.price), 0);
+        updateProducts(products);
+        alert(`success ${check}`);
+        dispatch(checkOut());
+    };
 
-  return (
-    <div className="bag">
-      {
-        bag.map((product) => (
-          <BagProduct
-            key={product.id}
-            product={product}
-          />
-        ))
-      }
-      <hr/>
-      <button
-        onClick={() => dispatch(removeAll())}
-      >
-        Remove all
-      </button>
-      <button
-        onClick={onCheckOut}
-      >
-        Check out
-      </button>
-    </div>
-  )
+    return (
+        <div className="bag">
+            {
+                bag.map((product) => (
+                    <BagProduct
+                        key={product.id}
+                        product={product}
+                    />
+                ))
+            }
+            <hr/>
+            <button
+                onClick={() => dispatch(removeAll())}
+            >
+                Remove all
+            </button>
+            <button
+                onClick={onCheckOut}
+            >
+                Check out
+            </button>
+        </div>
+    )
 }
 
 export default Bag;

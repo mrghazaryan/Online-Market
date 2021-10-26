@@ -1,0 +1,41 @@
+.sign-in {
+    position: fixed;
+    text-align: center;
+    left: 45%;
+    top: 40%;
+    width: 200px;
+    display: block;
+}
+
+.sign-inh1 {
+    position: fixed;
+    text-align: center;
+    left: 25%;
+    font-size: 30px;
+    top: 15%;
+}
+
+.sign-in-upBt {
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    text-transform: none;
+    position: fixed;
+    right: 35%;
+    top: 55%;
+    height: 35px;
+    width: 100px;
+
+}
+
+.sign-inBt {
+    background-color: midnightblue;
+    color: white;
+    text-transform: none;
+    text-decoration: none;
+    position: fixed;
+    left: 41%;
+    top: 55%;
+    height: 35px;
+    width: 100px;
+}

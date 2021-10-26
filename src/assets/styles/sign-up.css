@@ -1,0 +1,20 @@
+.sign-up {
+    text-align: center;
+    position: fixed;
+    left: 45%;
+    top: 15%;
+    width: 210px;
+
+}
+
+.sign-upBt {
+    background-color: green;
+    text-decoration: none;
+    text-transform: none;
+    position: fixed;
+    right: 5%;
+    top: 90%;
+    height: 35px;
+    width: 100px;
+    color: white;
+}
