@@ -12,7 +12,7 @@ const ValidationDate = ({
                             validationMsg
                         }) => {
     return (
-        <>
+        <div className={"dateInput"}>
             {dateTitle}
             <select
                 value={day}
@@ -40,7 +40,7 @@ const ValidationDate = ({
             </select>
             <span>{validationMsg && <span style={{color: 'red'}}>{validationMsg}</span>}</span>
             <br/>
-        </>
+        </div>
     );
 }
 

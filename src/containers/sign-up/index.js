@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Link, useHistory} from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 import {GENDERS} from '../../helpers/constants';
 import ValidationDate from '../../components/shared/validation-date';
 import ValidationInput from '../../components/shared/validation-input';
@@ -9,7 +9,7 @@ const SignUp = () => {
     const history = useHistory();
     const [email, changeEmail] = useState('');
     const [fullName, changeFullName] = useState('');
-    const [phone, changePhone] = useState('+');
+    const [phone, changePhone] = useState('');
     const [password, changePassword] = useState('');
     const [confirmPassword, changeConfirmPassword] = useState('');
     const [day, changeDay] = useState(1);
@@ -149,9 +149,7 @@ const SignUp = () => {
                 </label>
             ))}
             <br/>
-            <button className={"sign-upBt"} onClick={signUp}>
-                Sign Up
-            </button>
+            <button className='sign-upBt' onClick={signUp}>Sign Up</button>
         </div>
     );
 };

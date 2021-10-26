@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {createProduct} from "../../core/controllers/ProductAdd";
-import ValidationInput from "../../components/shared/validation-input";
 import {Link, useHistory} from "react-router-dom";
+import ProductInput from "../../components/shared/product-input";
 
 const ShopAdd = () => {
     const history = useHistory();
@@ -68,26 +68,26 @@ const ShopAdd = () => {
     return (
         <div className={'productAdd'}>
             <h1>Add Products</h1>
-            <ValidationInput
+            <ProductInput
                 title={'Product Name:'}
                 value={productName}
                 onChangeHandler={setProductName}
                 validationMsg={validations.productName}
             />
-            <ValidationInput
+            <ProductInput
                 title={'Description:'}
                 value={description}
                 onChangeHandler={setDescription}
                 validationMsg={validations.description}
             />
-            <ValidationInput
+            <ProductInput
                 title={'Price:'}
                 type={'number'}
                 value={price}
                 onChangeHandler={setPrice}
                 validationMsg={validations.price}
             />
-            <ValidationInput
+            <ProductInput
                 title={'Count:'}
                 type={'number'}
                 value={count}

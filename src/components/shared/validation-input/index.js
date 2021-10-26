@@ -1,17 +1,18 @@
 import React from 'react';
 
-const ValidationInput = ({title, type, value, onChangeHandler, validationMsg}) => {
+const ValidationInput = ({title, type, placeholder, value, onChangeHandler, validationMsg}) => {
     return (
-        <>
+        <div className={"input"}>
             {title}
-            <input className={'inputs'}
-                   type={type || 'text'}
-                   value={value}
-                   onChange={({target: {value}}) => onChangeHandler(value)}
+            <input
+                placeholder={placeholder}
+                type={type || 'text'}
+                value={value}
+                onChange={({target: {value}}) => onChangeHandler(value)}
             />
             {validationMsg && <span style={{color: 'red'}}>{validationMsg}</span>}
             <br/>
-        </>
+        </div>
     )
 };
 
